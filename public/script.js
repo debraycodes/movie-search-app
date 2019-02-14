@@ -77,6 +77,21 @@ window.onload = function(e){
     // send request
     xhr.send();
   };
+  function addToFavorites (movie) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", '/favorites', true);
+    // Set header information for request
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function() {
+      // When Request is ready
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            // Request finished. Do processing here.
+        };
+    };
+    xhr.send("foo=bar&lorem=ipsum");
+
+  };
   searchForm.addEventListener('submit', e => {
     e.preventDefault();
     searchApi();
