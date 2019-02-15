@@ -1,0 +1,36 @@
+nav {
+
+}
+
+nav ul {
+  list-style-type: none;
+  align-items: inline;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+#movie-list-div {
+  background-color: midnightblue;
+}
+
+#list {
+  list-style-type: none;
+}
+
+#list li {
+  background-color: lightgrey;
+}
+
+.navbar {
+
+}
+
+.hidden {
+
+}

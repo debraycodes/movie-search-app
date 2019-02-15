@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Neel Patel <neelp22@gmail.com> (https://github.com/darthneel)",
+  "author": "Neel Patel <neelp22@gmail.com> (https://github.com/darthneel) | DeBray Carpenter <debraycodes@gmail.com> (https://github.com/debraycodes)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.12.2",
