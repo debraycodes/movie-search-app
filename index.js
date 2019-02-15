@@ -18,7 +18,7 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.get('/favorites.html', function(req, res){
   var data = fs.readFileSync('./data.json');
   res.setHeader('Content-Type', 'application/json');
-  res.send(data);
+  res.sendFile('/favorites.html');
   // app.get was missing closing brace and parenthesis
 });
 
