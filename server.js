@@ -13,7 +13,9 @@ app.use(bodyParser.json());
 // Missing a closing parenthesis
 app.use('/', express.static(path.join(__dirname, 'public')));
 // Create middleware function to send favorites.html to browser on request
-
+app.get('/', (req, res) => {
+  res.sendFile('/index.html')
+});
 app.get('/favorites.html', function(req, res){
   var data = fs.readFileSync('./data.json');
   res.setHeader('Content-Type', 'application/json');
