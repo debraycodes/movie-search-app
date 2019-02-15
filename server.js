@@ -41,5 +41,5 @@ app.post('/favorites', function(req, res){
 });
 // app.list should be app.listen
 app.listen(PORT, function(){
-  console.log("Listening on port 3000");
+  console.log(`Listening on port ${PORT}`);
 });
