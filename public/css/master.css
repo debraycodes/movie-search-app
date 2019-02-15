@@ -1,5 +1,5 @@
 nav {
-
+  background-color: aqua;
 }
 
 nav ul {
@@ -25,6 +25,8 @@ nav ul li a {
 
 #list li {
   background-color: lightgrey;
+  padding: 2%;
+  margin: 1%;
 }
 
 .navbar {
