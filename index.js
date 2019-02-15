@@ -3,7 +3,7 @@ var app = express();
 var fs = require('fs');
 var path = require('path');
 // Make PORT dynamic by giving it a Heroku compatible option
-var PORT = process.env.PORT || 3000;
+var PORT = 3000 || process.env.PORT;
 // Must import body-parser module
 var bodyParser = require('body-parser');
 
@@ -18,7 +18,7 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.get('/favorites.html', function(req, res){
   var data = fs.readFileSync('./data.json');
   res.setHeader('Content-Type', 'application/json');
-  res.sendFile('/favorites.html');
+  res.send(data);
   // app.get was missing closing brace and parenthesis
 });
 
